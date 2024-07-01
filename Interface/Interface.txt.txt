@@ -1,0 +1,58 @@
+Interfaces can contain properties and methods, but not variables/fields
+
+---------------------------------
+1. Variable:
+int age = 30; Here, age is a variable of type int holding the value 30.
+
+interface Imeter{
+int age=30; //variables
+int weight; //variables
+}
+
+---------------------------------------
+2.Field:
+
+interface Imeter
+{
+    public string color; // Field 
+}
+Here, color is a field 
+
+--------------------------------------
+3.Property:
+interface Imeter
+{
+     string Name //this is a property
+    {
+        get { return name; }
+        set { name = value; }
+    }
+}
+
+note 
+    private string name;// this is field
+
+    public string Name //this is a property
+    {
+        get { return name; }
+        set { name = value; }
+    }
+Here, Name is a property that exposes the private field name.
+ --------------------------------------------
+4.Method:
+interface Imeter
+{
+    int Add(int a, int b) //method
+    {
+        return a + b;
+    }
+}
+Here, Add is a method o that takes two integers (a and b) as parameters and returns their sum.
+--------------------------------------------------
+
+In summary:
+
+Variables are storage locations for data.
+Fields are variables directly declared within a class or struct.
+Properties provide controlled access to fields, enforcing encapsulation.
+Methods contain code that performs actions and optionally returns values.

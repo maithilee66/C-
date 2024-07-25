@@ -1,0 +1,25 @@
+------------------------------------------------------
+//1 within the application accessiblity
+Public method
+Internal method
+------------------------------------------------------
+ //2 within a class class1 all methods can be accessed
+Public method
+Internal method
+Private method
+Protected method
+------------------------------------------------------
+ //3 from derived  class object only public and internal can be accessed
+Public method
+Internal method
+
+ //3.2 but from derived class method we can can access public , protected , internal method
+Public method
+Internal method
+Protected method
+------------------------------------------------------
+ //4 from another namespace only public method can be accessed
+------------------------------------------------------
+ //5 from another namespace but in derived only Public and Protected can be accessed
+
+

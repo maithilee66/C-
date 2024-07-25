@@ -27,7 +27,7 @@ namespace methodHiding
     //In class B2 method hiding is  DONE
     class B2 : A
     {
-        public void f()
+        public new void f()
         {
             Console.WriteLine("B2 f()");
         }
